@@ -1,0 +1,278 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+
+.caixa {  /*Div*/
+	position: relative;/**/  
+	width: 940px;       /*largura, lembre-se a largura de 940px é uma boa largura para internet*/
+	margin: 0 auto;       /*as margens do site ficam em 0 e o auto faz ela se calcularem sozinhas*/
+}
+
+nav {
+	position: absolute; /*absolute vai tirar o objeto da posição, porquê ja esta estatico vai tirar ele */
+	top: 110px;       /*top usado para mover o objeto para baixo ou seja ele esta no ponto X , quanto mais pixel for usado mais ele desce EX top: 10px ele vai descer 10 pixel;*/
+	right: 0;         /*vai mover o codigo para a esquerda, lembre-se do left*/
+}
+
+nav li {    /*aqui seria o item lista dentro do nav*/
+	display: inline;   /*para deixar o conteudo na lista em linha */	
+	margin: 0 0 0 15px;     /*vai ser o espaçamento interno ou seja a distancia entre 1 ou mais objeto como acontece */
+
+}
+
+nav a {   /* aqui vai estar mechendo nas tag a o que está dentro dela*/
+	text-transform: uppercase;  /*uppercase deixa as letras em mauisculo*/
+	color: #000000;
+	font-weight: bold;  /*deixou o texto em negrito*/
+	font-size: 22px;
+	text-decoration: none; /* tira a sublinhação do texto, quando é clicado não fica roxo e deixou sem nenhum = none */
+}
+
+nav a:hover {   /*Então, quando eu tenho nav a, ou seja o link da navegação, eu tenho o comportamento padrão, quando eu tenho hover a nav, eu tenho, quando o mouse estiver por cima dos links, dentro do menu de navegação e aqui, a gente pode criar o estilo que a gente quiser, por exemplo, eu posso botar uma cor extremamente complexa.             */
+	color: #C78C19;
+	text-decoration: underline;
+}
+/*cabeçalho começa acima*/
+
+.produtos { /*é a div dos produtos*/
+	width: 940px; /*seria umar largura fixa*/
+	margin: 0 auto;  /*o 0 seria uma espaçamento de baixo e em cima e o auto seria dos lados, com width deixando os produtos dentro da lista centralizado*/
+	padding: 50px 0;
+}
+
+.produtos li { 
+	display: inline-block;  /*esta deixando os produtos em bloco, cada um está em um bloco mas em uma linha*/
+	text-align: center;
+	width: 30%; /*cada um dos elementos tem 30% de largura */
+	vertical-align: top; /*vai faz*/
+	margin: 0 1.5%;  
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+ /*hover o mouse está por cima , active e quando clicado para usar qualquer um dos 2, :active ou : hover*/
+.produtos li:hover {  /*aqui é a função de quando o mouse o hover estiver em cima dos produtos o que está mechendo nessa tag */
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {  /*quando eu passo o mouse por cima, o meu elemento do título fica com o tamanho de fonte maior, ele está um pouco exagerado, vamos experimentar botar, sei lá, 34 pixels, para que ele não quebre a linha*/
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;  /*seria o tamanho de fonte, aqui está em negrito*/
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");  /*colocando uma imagem de fundo*/
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+main {
+	
+}
+
+form {
+	margin: 40px 0;  /* no 40px e a altura  e o 0 representa os lados   */
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2); /*1.2 é 20%*/
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px; /*um aumenta a tabela outra aumenta a largura da tabela*/
+}
+
+
+/* css da página inicial */
+.banner {
+	width:100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+
+
+}
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px; /*altura da imagem*/
+	float: left; /*float= flutuação :)*/
+	margin: 0 20px 20px 0;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;  /*altura da linha (A propriedade CSS line-height permite controlar o espaçamento entre as linhas de um texto*/
+}
+
+.itens:first-child { /*primeiro filho ou seja o 1 da classe itens a ser aflingido, existe o last-child ou nth-child(x numero)*/
+	font-weight: bold; 
+}
+
+.itens:before {
+	content: "🟊";
+}
+
+.imagem-beneficios {
+	width: 60%;
+	opacity: 1;
+	transition:400ms;
+	box-shadow: 10px 10px 30px 0 #000000;
+
+	       /*eixo X     Y      espalhamento(de pixel a uma sombra)*/
+
+}
+.imagem-beneficios:hover{
+    opacity: 0.3;
+}
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+@media screen and (max-width:480px){
+   .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+	 width: auto;
+    }
+    h1{
+    	text-align: center;
+    }
+    nav{
+    	position: static;
+    }
+    .lista-beneficios, .imagem-beneficios{
+    	width: 100%;
+    }
+}
+
+/*
+obs:  
+ left: vai criar um espaçamento para direito e o objeto para direita, seria a mesma coisa do top em vez de ir para esquerda vai ser para direita;
+ float:  Alternativa correta! Tanto o float:left quanto o float: right servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele;
+ 
+EX: 
+last-child ou nth-child(x numero)
+ou
+ last-child ou nth-child(4n)
+ */
